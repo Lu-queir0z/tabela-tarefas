@@ -1,8 +1,8 @@
 let input;
-let tarefas 
+let tarefas = [{input}];
 
 function adicionarTarefa() {
-    input = document.getElementById('input').value;
-
-    console.log(input)
+    input = document.querySelector('#input').value;
+    tarefas.unshift = input;
+    document.querySelector('#listaTarefas').innerHTML = tarefas;
 }
