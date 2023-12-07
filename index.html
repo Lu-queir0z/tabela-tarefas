@@ -22,15 +22,23 @@
                         <label for="input" class="form-label fw-bold text-light"></label>
                         <input type="text" name="input" id="input" class="form-control"/>
                     </div>
+                     <div class="row">
+               <!-- botão ADD -->
+               <div class="">
+                <button class="btn btn-primary mt-2" name="adicionar" id="adicionar" onclick="adicionarTarefa()">
+                        Add
+                </button>
+                </div>
+                <!-- botão remove -->
+                <div class=" ">
+                <button type="submit" class="btn btn-danger mt-2" name="calcular" id="calcular" onclick="remover()">Remove</button>
+            </div>
+                     </div>
+ 
 
-                <!-- botão ADD -->
-                    <div class="">
-                        <button class="btn btn-primary mt-2" name="adicionar" id="adicionar" onclick="adicionarTarefa()">
-                                Add
-                        </button>
+                    <div class=" fw-bold bg-info vw-100 ">  
+                        <div class="col justify-content-center align-items-center" id="listaTarefas"></div>
                     </div>
-
-                    <div class="listaTarefas" id="listaTarefas"></div>
 
                 </div>
 
